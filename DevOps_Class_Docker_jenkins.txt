@@ -6,4 +6,5 @@ In order to run OS you need Hardware.
 Inorder to run Hardware we need Ram/CPU.
 
 docker history <images_name> --> Check the history of the image created.
-
+copy a file from local system to Docker container.
+$ docker cp file1 <container_image>:/path/to/copy/to
