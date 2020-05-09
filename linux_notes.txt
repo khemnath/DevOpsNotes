@@ -1,0 +1,10 @@
+Mastering the RHEL8
+
+# Allow specifically incoming port  request on port 8080.
+[root@master ~]# firewall-cmd --zone=public --add-port=8080/tcp
+success
+
+## Reload firewall to apply permanent rules.
+$ [root@master ~]# firewall-cmd --reload
+success
+
