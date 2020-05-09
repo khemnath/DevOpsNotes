@@ -5,4 +5,5 @@ if you want to run any program software you need OS.
 In order to run OS you need Hardware.
 Inorder to run Hardware we need Ram/CPU.
 
-docker ps --> Check running images.
+docker history <images_name> --> Check the history of the image created.
+
