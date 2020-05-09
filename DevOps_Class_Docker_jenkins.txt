@@ -1,2 +1,8 @@
 Date: 9 MAY 2020.
 --------------------------
+Basic Information:-
+if you want to run any program software you need OS.
+In order to run OS you need Hardware.
+Inorder to run Hardware we need Ram/CPU.
+
+docker ps --> Check running images.
