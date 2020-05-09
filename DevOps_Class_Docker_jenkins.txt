@@ -6,8 +6,24 @@ In order to run OS you need Hardware.
 Inorder to run Hardware we need Ram/CPU.
 
 ## Run a docker container in background.
-$ docker run -d -i -t --name <Custom_images_name> <Docker_Image>.
+$ docker run -d -i -t --name <Custom_images_name> <Docker_Image>. 
+   --> run lauch OS, d means background, i means interactive, t means terminal.
+   --> when docker is lauch they have their own IP Address.
+   --> Due to security reason when a docker is lauch they are Isolated. Nobody from outside World can connect to their IP.
+   --> You may create and Run serveral docker container in a System, each container will have their own IP.
+   --> All docker container within system can connect each other and with Host system. However, they cannot be directly connected from outside.
+
+
 ## Check the history of the image created.
 $ docker history <images_name> 
+
 ## copy a file from local system to Docker container.
 $ docker cp file1 <container_image>:/path/to/copy/to
+
+## Link folder from local system to Docker container.(in linux term it's also call mounting OR also bind)
+$ docker run -d -i -t -v /local/system/path:/docker/container/path/to/link --name <images_name> Docker_Image
+ --> -v means volume.
+
+## check docker container IP or Network informaton.
+$ docker inspect <container_image>
+
