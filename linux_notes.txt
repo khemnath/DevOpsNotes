@@ -1,6 +1,12 @@
 Mastering the RHEL8
 
-# Allow specifically incoming port  request on port 8080.
+## Check if the firewall port is opening.
+[root@master ~]# firewall-cmd --zone= --query-port=80/tcp
+yes
+[root@master ~]# firewall-cmd --zone= --query-port=8080/tcp
+no
+
+ ## Allow specifically incoming port  request on port 8080.
 [root@master ~]# firewall-cmd --zone=public --add-port=8080/tcp
 success
 
@@ -8,3 +14,14 @@ success
 $ [root@master ~]# firewall-cmd --reload
 success
 
+## if you want to give user unlimited power like root like and run all things. Then we can use SUDO.
+-- sudo provide unlimited power. This required setup.
+    go to  /etc/sudoers. In this file go section.
+## Allow root to run any command anywhere.
+    root  ALL=(ALL)      ALL
+    jenkins   ALL=(ALL)  ALL
+    same access that doesn't require password when accessing.
+    jenkins   ALL=(ALL)   NOPASSWD: ALL
+
+-- Way to tell Jenkin you have suport power and can do anything.
+$ sudo cp -v -r -f file  /var/www/html/text1.text

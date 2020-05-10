@@ -1,7 +1,7 @@
 Date: 9 MAY 2020.
 -----------------
 ## Tip of the master Or (Head) -- The latest commit from the Repository.
-## Switch to Branch -- Checkout.
+## Switch to Branch through command-- Checkout.
 
 
 Merge: Updating the feature branch commit to Master branch.
@@ -9,4 +9,9 @@ Merge: Updating the feature branch commit to Master branch.
       -- command to merge the featue branch to master.
          $ git merge <featue_branch>
 Rebase:
+
 Squash:
+ $ 
+ 
+ git merge --squah <featue_branch>
+

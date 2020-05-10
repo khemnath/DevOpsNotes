@@ -1,0 +1,8 @@
+Date: 9 MAY 2020.
+-----------------
+-- Jenkin is a process always run by a user jenkins.
+
+Build PipeLine
+Delivery PipeLine
+
+
